@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block styles %}
+<link href="/grade_list.css" rel="stylesheet" />
+{% endblock %} {% block page_content %}
+<div class="paper">
+    <form class="grade-form" action="/action/grade_query/add" method="post">
+    
+        <!--<label style="font-size: 1.2em;">学期：</label>
+        <select name="term">
+            <option value="">--选择--</option>
+            {% for item in courses %}
+            <option value="{{item.cou_term}}">
+                {{item.cou_term}}({{item.cou_sn}})
+            </option>
+            {% endfor %}
+        </select> -->
+        <label style="font-size: 1.2em;">学期：</label>
+        <input type="text" name="term" />
+        <br>
+        <label style="font-size: 1.2em;">学生：</label>
+        <input type="text" name="name" />
+
+         <a href="/grade_query_student_list" class="button" style="font-size: large;">查询</a>
+      <br>
+
+        <label style="font-size: 1.2em;">课程：</label>
+        <input type="text" name="name" />
+         <a href="/grade_query_course_list" class="button" style="font-size: large;">查询</a>
+    </form>
+    <hr /> 
+
+</div>
+{% endblock %}

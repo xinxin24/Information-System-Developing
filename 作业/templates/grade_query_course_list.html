@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% block styles %}
+<link href="/grade_query_list.css" rel="stylesheet" />
+{% endblock %} {% block page_content %}
+<div class="paper">
+    <form class="grade-form" action="/action/grade_query_course_list/add" method="post">
+
+        <div class="dialog-background"></div>
+        <table class="table">
+
+            <tbody >
+                <div class="dialog-head"></div>
+                <div class="dialog-body">
+
+                    <caption>Java应用程序设计成绩单</caption>
+                    <tr>
+                        <td>学期</td>
+                        <td>学号</td>
+                        <td>姓名</td>
+                        <td>成绩</td>
+                    </tr>
+                    <tr>
+                        <td>2020秋季学期</td>
+                        <td>S1810650223</td>
+                        <td>马心悦</td>
+                        <td>90</td>
+
+                    </tr>
+                    <tr>
+                        <td>2020秋季学期</td>
+                        <td>S1810650224</td>
+                        <td>石欣欣</td>
+                        <td>86</td>
+
+                    </tr>
+                    <tr>
+                        <td>2020秋季学期</td>
+                        <td>S1810650226</td>
+                        <td>王欣</td>
+                        <td>88</td>
+
+                    </tr>
+
+                <div class="btn">
+                    <a href="/grade-query">
+                        返回
+                    </a>
+        
+                </div>
+            </tbody>
+        </table>
+        
+    </form>
+</div>
+{% endblock %}

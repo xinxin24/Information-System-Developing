@@ -1,0 +1,67 @@
+{% extends "base.html" %} {% block styles %}
+<link href="/grade_query_list.css" rel="stylesheet" />
+{% endblock %} {% block page_content %}
+<div class="paper">
+    <form class="grade-form" action="/action/grade_query_student_list/add" method="post">
+
+
+        <div class="dialog-background"></div>
+        <table class="table">
+
+            <tbody>
+                <div class="dialog-head"></div>
+                <div class="dialog-body">
+
+
+
+                    <caption>学生成绩单</caption>
+                    <tr>
+                        <th>学期</th>
+                        <th>课程编号</th>
+                        <th>课程名称</th>
+                        <th>成绩</th>
+                    </tr>
+                    <tr>
+                        <td>2020秋季学期</td>
+                        <td>C01</td>
+                        <td>决策方法与应用</td>
+                        <td>88</td>
+
+                    </tr>
+                    <tr>
+                        <td>2020秋季学期</td>
+                        <td>C02</td>
+                        <td>信息系统开发</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>2020秋季学期</td>
+                        <td>C03</td>
+                        <td>Java程序设计</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>2020秋季学期</td>
+                        <td>C04</td>
+                        <td>信息资源管理</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>2020秋季学期</td>
+                        <td>C05</td>
+                        <td>系统工程</td>
+                        <td>95</td>
+                    </tr>
+
+                    <div class="btn">
+                        <a href="/grade-query">
+                            返回
+                        </a>
+                    </div>
+            </tbody>
+
+        </table>
+    </form>
+
+</div>
+{% endblock %}

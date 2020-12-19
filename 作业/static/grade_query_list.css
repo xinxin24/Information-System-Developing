@@ -1,0 +1,38 @@
+
+
+form.grade-query-form > input, form.grade-query-form > select {
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+form.grade-query-form > select {
+    min-width: 8em;
+}
+
+
+body{
+    width: 100%;
+}
+
+table{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+
+.ctrlbar {
+    display: flex;
+    padding: 0 0.1em;
+    justify-content: left;
+    align-items: center;
+}
+
+.ctrlbar > .btn {
+    padding: 2px 15px;
+    background-color: darkcyan;
+    
+}
+
+

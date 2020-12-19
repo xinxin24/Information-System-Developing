@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+<!--  -->
+{% block styles %}
+<link rel="stylesheet" href="/timetable1.css" />
+{% endblock %}
+
+<!--  -->
+{% block page_content %}
+<div>
+
+    <body>
+        <h3><b>专业：信息管理与信息系统</b></h3>
+
+
+
+        <table border="1">
+            <caption>2020秋季学期学生课表</caption>
+            <tr>
+                <th colspan="3">节次/时间</th>
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+                <th>星期六</th>
+                <th>星期日</th>
+            </tr>
+            <tr>
+                <td rowspan="4">上午</td>
+                <td rowspan="2">第一大节</td>
+                <td>第一小节（8：20-9:05）</td>
+                <td></td>
+                <td rowspan="2">课程：信息系统开发 <br>地点：第一公教B209</br> 老师：吕成功</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>第二小节（9:15-10:00）</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td rowspan="2">第二大节</td>
+                <td>第三小节（10:20-11:05）</td>
+                <td rowspan="2">课程：决策方法与应用 <br>地点:第一公教C309 <br>老师：井彩霞</td>
+                <td></td>
+                <td rowspan="2">课程：Java程序设计<br>地点:第一公教B309 <br>老师：李威威 </td>
+                <td rowspan="2">课程：Java程序设计<br>地点:第一公教B309 <br>老师：李威威</td>
+                <td rowspan="2">课程：系统工程<br>地点:第一公教B305 <br>老师：吴翠花</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>第四小节（11:15-12:00）</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+            <tr>
+                <td rowspan="4">下午</td>
+                <td rowspan="2">第三大节</td>
+                <td>第五小节（14:00-14:45）</td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">课程：信息资源管理<br>地点:第一公教A111 <br>老师：李莹 江婷婷</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>第六小节（14:55-15:40）</td>
+                <td></td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2">第四大节</td>
+                <td>第七小节（16:00-16:45）</td>
+                <td></td>
+                <td rowspan="2">课程：形势与政策<br>地点:第一公教A219 <br>老师：张冠</td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">课程：信息系统开发 <br>地点：第一公教B209</br> 老师：吕成功</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>第八小节（16:55-17:40）</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+        <div class="btn">
+            <a href="/course">
+                返回
+            </a>
+        </div>
+</div>
+
+{% endblock %}
